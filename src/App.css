@@ -13,6 +13,10 @@
   }
 }
 
+@font-face {
+  font-family:RussoOne-Regular;
+  src: url("fonts/RussoOne-Regular.ttf");
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -34,5 +38,133 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+:root{
+  --darkblue-color:#0c122a;
+  --lightblue-color:#f8f8fa;
+}
+.b_signup{
+  font-size: 16px;
+  border-radius: 6px;
+  background-image: linear-gradient(to right top, #92e3a9, #87ca88, #7cb169, #72984b, #67802e);
+  
+}
+
+.hero_banner{
+  background-color: var(--lightblue-color) ;
+}
+.b_heding1{
+  font-size: 4rem;
+  font-family: RussoOne-Regula;
+  font-weight: 900;
+  font-style: italic;
+}
+.b_img_box{
+  height: 200px !important;
+  width: 200px;
+}
+.store_logo{
+  width: 60px;
+  height: 60px; 
+
+}
+.b_app_box{
+  background-color:  rgb(255, 255, 255);;
+  width: 50%;
+  box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.2);
+}
+.b_heading6{
+  font-size: 1.2rem;
+}
+
+footer{
+  background-color: var(--lightblue-color);
+}
+.nav-link{
+  color: #646464;
+}
+footer .social .nav-link{
+  font-size: 2rem;
+  color:  #646464;
+}
+.b_heading3{
+  font-size: 2rem;
+}
+
+/* login form css  */
+.b_form_icon{
+  font-size: 2rem;
+  background-image: linear-gradient(to right top, #92e3a9, #87ca88, #7cb169, #72984b, #67802e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.b_input_box input{
+  height: 30px; 
+  box-shadow: none !important;
+  border: none !important;
+}
+ input:focus{
+   box-shadow: none !important;
+   border: none !important;
+   background: none !important;
+ }
+.b_input_box{
+  padding: 10px 8px;
+  background: #FFF;
+  border-radius:25px;
+  box-shadow: 0 0 10px #d4eefa;
+}
+input:-internal-autofill-selected{
+  background-color: #FFF !important;
+}
+.b_rounded_btn{
+  background-image: linear-gradient(to right top, #92e3a9, #87ca88, #7cb169, #72984b, #67802e);
+  border-radius: 25px;
+  box-shadow: 0 0px 5px #d4eefa;
+}
+.b_use_auth{
+  color: #23883f;
+  cursor: pointer;
+}
+.b_user_form{
+  margin: 120px  !important;
+}
+
+/* //loader */
+body{
+  overflow-x: hidden;
+}
+.loader{
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+
+}
+@media screen and (max-width: 480px) {
+  .b_form {
+    width: 100% !important;
+  }
+  .b_user_form{
+    margin: 0px  !important;
+    margin-top: 100px !important;
+  }
+  .b_heding1 {
+    font-size: 1.5rem;
+  }
+  .hero_banner{
+    margin-top: 50px;
+  }
+  .col-12{
+    margin-top: 20px !important;
+  }
+  br{
+    display: none !important;
   }
 }
